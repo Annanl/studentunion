@@ -52,7 +52,7 @@
 							<div class="layout-logo" style="left:0;top:0;width: 200px;;text-align: center;padding-left: 6px;">
 								<router-Link to="/index/">
 									<MenuItem name="控制台">
-									<h3>南方学生会后台系统</h3>
+									<h3>学生会后台系统</h3>
 									</MenuItem>
 								</router-Link>
 							</div>

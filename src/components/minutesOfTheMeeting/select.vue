@@ -142,6 +142,7 @@
 				count: 10,
 				modal13: false,
 				modal14:false,
+				//表格标题，key值对应data6中键名
 				columns7: [{
 						title: '编号',
 						key: 'mId',
@@ -215,7 +216,17 @@
 						}
 					}
 				],
-				data6: [],
+				//表格数据，键名对应columns7中的key值
+				data6: [
+					{
+						mId: "11",
+						mTitle: "22",
+						tName: "33",
+						mDate: "44",
+						mName: "55",
+						mContexts: "66"
+					}
+				],
 				minutesOfTheMeeting: {
 					mId: 0,
 					mTitle: "",

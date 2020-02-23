@@ -46,7 +46,7 @@
 				var option = {
 					title: {
 						text: ' ',
-						subtext: '南方学院(虚拟数据)',
+						subtext: '学院(虚拟数据)',
 						x: 'center'
 					},
 					tooltip: {
@@ -100,7 +100,7 @@
 				var option = {
 					title: {
 						text: ' ',
-						subtext: '南方学院(虚拟数据)',
+						subtext: '学院(虚拟数据)',
 						x: 'center'
 					},
 					tooltip: {

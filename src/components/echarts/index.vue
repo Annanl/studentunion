@@ -21,7 +21,7 @@
 				
 				myChart.setOption({
 					title: {
-						text: '南方学生会人数',
+						text: '学生会人数',
 						subtext: '校内信息'
 					},
 					tooltip: {
@@ -47,8 +47,8 @@
 						type: 'category',
 						data: ['书记', '主席团', '文体部', '纪检部', '党团部', '秘书部', '播音部', '社团部', '学习部', '生活部', '外联部', '总人数']
 					},
+					//柱状图数据
 					series: [
-						
 						{
 							name: '2016年',
 							type: 'bar',
