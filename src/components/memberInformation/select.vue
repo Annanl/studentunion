@@ -217,8 +217,7 @@
 				</div>
 				<div style="width: 28%;position:relative;float: left;margin: auto; text-align: center;">
 					<Upload name='file' :show-upload-list='false' :on-success='resultMsg' action="http://47.100.245.30:8080/upload/memberInformation">
-<!--						原路径http://47.100.245.30:8080/image/tx.png失效-->
-						<p><img :src="memberInformation.pPhoto" onerror="this.src=''" id="myCanvas"
+						<p><img :src="memberInformation.pPhoto" @error=txerror($event) id="myCanvas"
 							 width="200" height="250" style="border:1px solid #d3d3d3;" /></p>
 						<Button icon="ios-cloud-upload-outline">可拖动上传</Button>
 					</Upload>
@@ -228,6 +227,7 @@
 	</div>
 </template>
 <script>
+	import txImg from "../../assets/tx.png"
 	export default {
 		data() {
 			return {
@@ -502,6 +502,10 @@
 			}
 		},
 		methods: {
+			//空头像图片本地化
+			txerror(me){
+				me.target.src = txImg;
+			},
 			//添加按钮
 			add() {
 				this.interface = "insert";
