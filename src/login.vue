@@ -11,7 +11,7 @@
 	}
 </style>
 <template>
-	<div style="height: 100%;background-image: url(http://47.100.245.30:8080/image/bj.jpg);background-size: 100% 100%;">
+	<div style="height: 100%;background-size: 100% 100%;" :style="bgImg">
 		<div style="height: 6%;"></div>
 		<div class="login">
 			<br />
@@ -67,9 +67,13 @@
 	</div>
 </template>
 <script>
+	import defaultImg from "./assets/bj.jpg";
 	export default {
 		data() {
 			return {
+				bgImg: {
+					backgroundImage: "url(" + defaultImg + ")"
+				},
 				btn: "用短信验证码登录",
 				yzm: "display: none;",
 				yhm: "display: block;",
